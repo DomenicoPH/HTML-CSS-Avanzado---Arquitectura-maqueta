@@ -222,5 +222,64 @@ img{
 
 
 /* ************* M O D E L O S ************* */
+.modelo{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    margin-bottom: 5rem;
+}
+    .modelo:last-of-type{
+        margin-bottom: 0;
+    }
+@media (min-width: 768px){ 
+    .modelo{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+.contenido-modelo{
+    padding: 5rem;
+    background-color: var(--blanco);
+}
 
+.basico{
+    background-image: url('../img/modelo_basico.jpg');
+}
+@media (min-width: 768px){ 
+    .basico{
+        background-position: top right;
+    }
+    .basico .contenido-modelo{
+        grid-row: 2 / 3;
+        padding: 2rem 2rem 2rem 0;
+    }
+}
+.premier{
+    background-image: url('../img/modelo_premier.jpg');
+}
+@media (min-width: 768px){ 
+    .premier{
+        background-position: top left;
+    }
+    .premier .contenido-modelo{
+        grid-column: 2 / 3;
+        padding: 2rem;
+    }
+}
+.elite{
+    background-image: url('../img/modelo_elite.jpg');    
+}
+@media (min-width: 768px){ 
+    .elite{
+        background-position: top right;
+    }
+    .elite .contenido-modelo{
+        padding: 2rem 2rem 2rem 0;
+    }
+}
 /* ************* M O D E L O S ************* */
+
+
+/* ************* G A L E R I A ************* */
+
+/* ************* G A L E R I A ************* */
